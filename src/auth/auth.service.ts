@@ -1,7 +1,9 @@
-import { Injectable } from '@nestjs/common';
+import { Inject } from '@nestjs/common';
 import { IAuthService } from './auth';
+import { Services } from 'src/utils/types';
+import { IUserService } from 'src/users/user';
 
-@Injectable()
 export class AuthService implements IAuthService {
+  constructor() {}
   validateUser() {}
 }
